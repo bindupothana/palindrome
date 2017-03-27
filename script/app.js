@@ -1,21 +1,18 @@
 var app=angular.module('palindromeApp',[]);
 app.controller('palindromeCtrl',function($scope){
 	$scope.palindrome=function(string){
-    var n,r,sum=0,temp;    
-         
-         
-          temp=n;      
-          while(n>0)      
-          {      
-           r=n%10;      
-           sum=(sum*10)+r;      
-           n=n/10;      
-          }      
-          if(temp==sum)      
-           alert("Number is Palindrome.");      
-          else      
-           alert("Number is not Palindrome");     
-    }  
+   var revStr = "";
+var i = string.length;
+for(var j=i; j>=0; j--) {
+revStr = revStr+string.charAt(j);
+}
+if(string == revStr) {
+alert(string+" -is Palindrome");
+} else {
+alert(string+" -is not a Palindrome");
+}  
+    } 
+
   
 
 });

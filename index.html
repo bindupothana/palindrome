@@ -9,9 +9,9 @@
 <body>
 <div ng-controller="palindromeCtrl">
 <h3><br>AngularJs palindrome </h3></br>
-Enter number:<input type="text" ng-model="num" />
-<button class="btn-primary" type="submit"  ng-click="palindrome(num)">click</button>
-<br/><h4/><div ng-repeat=" output in num track by $index"> {{output}}</div>
+Enter string/number:<input type="text" ng-model="string" />
+<button class="btn-primary" type="submit"  ng-click="palindrome(string)">click</button>
+<br/><h4/><div ng-repeat=" output in string track by $index"> {{output}}</div>
 <!--<br/><h4/>{{ num }} -->
 
 
